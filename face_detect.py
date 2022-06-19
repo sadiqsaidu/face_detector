@@ -3,7 +3,7 @@ import cv2 as cv
 
 # Get user supplied values
 imagePath = sys.argv[1]
-cascPath = "haarcascade_frontalface_default.xml"
+cascPath = "face.xml"
 
 # Create the haar cascade
 faceCascade = cv.CascadeClassifier(cascPath)

@@ -23,9 +23,9 @@ faces = faceCascade.detectMultiScale(
 
 print("Found {0} faces!".format(len(faces)))
 
-# Draw a rectangle around the faces
+# Draws a rectangle around the faces
 for (x, y, w, h) in faces:
     cv.rectangle(image, (x, y), (x+w, y+h), (0, 255, 0), 2)
 
 cv.imshow("Faces found", image)
-cv.waitkey(0)
+cv.waitKey(0)

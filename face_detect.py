@@ -22,7 +22,7 @@ def detect_face(image, file):
         flags = cv.cv2.CASCADE_SCALE_IMAGE
     )
 
-    print("Found {0} faces!".format(len(faces)))
+    print(f"Found {len(faces)} faces!")
 
     # draws a rectangle around the faces detected
     for (x, y, w, h) in faces:
